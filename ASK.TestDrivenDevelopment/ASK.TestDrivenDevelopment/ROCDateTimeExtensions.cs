@@ -53,7 +53,7 @@ namespace ASK.TestDrivenDevelopment
         {
             CultureInfo culture = new CultureInfo("zh-TW");
             culture.DateTimeFormat.Calendar = new TaiwanCalendar();
-            var result = target.ToLocalTime().ToString("民國yyy年MM月dd日 週三", culture);
+            var result = target.ToLocalTime().ToString("民國yyy年MM月dd日 ddd", culture).ToString();
 
             return result;
         }
@@ -64,7 +64,7 @@ namespace ASK.TestDrivenDevelopment
         {
             CultureInfo culture = new CultureInfo("zh-TW");
             culture.DateTimeFormat.Calendar = new TaiwanCalendar();
-            var result = target.ToLocalTime().ToString("民國yyy年MM月dd日 星期三", culture);
+            var result = target.ToLocalTime().ToString("民國yyy年MM月dd日 dddd", culture);
 
             return result;
         }
