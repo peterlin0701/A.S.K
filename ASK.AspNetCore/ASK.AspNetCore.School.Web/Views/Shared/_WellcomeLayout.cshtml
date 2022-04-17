@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        .jumbotron {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            margin-bottom: 0;
+            background-color: #fff;
+        }
+
+
+            .jumbotron p:last-child {
+                margin-bottom: 0;
+            }
+
+            .jumbotron h1 {
+                font-weight: 300;
+            }
+
+            .jumbotron .container {
+                max-width: 40rem;
+            }
+
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+            footer p {
+                margin-bottom: .25rem;
+            }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <link rel="stylesheet" href="~/ASK.AspNetCore.School.Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" /><circle cx="12" cy="13" r="4" /></svg>
+                    <strong>School</strong>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+        <section class="jumbotron">
+            <div class="container-fluid">
+                <h1>作業</h1>
+                <p class="lead text-muted">請將以下作業清單完成!</p>
+                <p>
+                    <ol>
+                        <li>
+                            <p class="lead text-muted">建立控制項 Student & Action : Index,Edit,Details</p>
+                        </li>
+                        <li>
+                            <p class="lead text-muted">
+                                仿效 Course 使用檢視模型 scaffold 建立 Student 的 Index,Edit,Details 檢視頁面(請勿手刻，使用 scaffold 產生 view)，並且設定佈局為 _Layout.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="lead text-muted">
+                                使用 Datas 裡面的 StudentRepository 來將資料傳送給頁面
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                使用 ViewBag 在每個頁面設定 html 標題
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                CourseController 裡面有一個方法 GetMessage 其他地方會呼叫到它，修飾詞不能變動，要怎麼讓這個方法不要成為 Action，不要讓使用者可以從網址使用到它。
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://github.com/startbootstrap/startbootstrap-sb-admin-2/archive/gh-pages.zip">下載樣版</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                使用 sb-admin ，建立 Area Administrator 的佈局
+                            </p>
+                        </li>
+                        <li>
+                            <p class="lead text-muted">
+                                設定 Route Area Administrator
+                            </p>
+                        </li>
+                        <li>
+                            <p class="lead text-muted">
+                                Area Administrator 新增控制項 Account，新增模型 Account ，屬性為: ID,Name,Email，使用檢視模型 scaffold 建立 Account 的 Index,Edit,Details 檢視頁面
+                            </p>
+                        </li>
+                        <li>
+                            <p class="lead text-muted">
+                                建立 AccountRepository ，並且建立 List and Get，自行建立假資料兩三筆即可。
+                            </p>
+                        </li>
+                        <li>
+                            <p class="lead text-muted">
+                                建立單元測試測試 ASK.AspNetCore.School.Test，AccountRepository 資料是否符合預期
+                            </p>
+                        </li>
+                    </ol>
+
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
