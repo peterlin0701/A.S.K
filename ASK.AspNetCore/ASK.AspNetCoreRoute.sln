@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASK.AspNetCoreRoute", "ASK.AspNetCoreRoute\ASK.AspNetCoreRoute.csproj", "{D17163CE-363C-46ED-9F19-4280CAEFB4AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASK.AspNetCoreRazorPage", "ASK.AspNetCoreRazorPage\ASK.AspNetCoreRazorPage.csproj", "{03FF9B2B-0070-4CB5-A76D-287FAA65FE23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASK.AspNetCoreRazorPage", "ASK.AspNetCoreRazorPage\ASK.AspNetCoreRazorPage.csproj", "{03FF9B2B-0070-4CB5-A76D-287FAA65FE23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLogTest", "NLogTest\NLogTest.csproj", "{45AFE3DD-5315-4D13-A07D-01262F6A0A08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{03FF9B2B-0070-4CB5-A76D-287FAA65FE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03FF9B2B-0070-4CB5-A76D-287FAA65FE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03FF9B2B-0070-4CB5-A76D-287FAA65FE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45AFE3DD-5315-4D13-A07D-01262F6A0A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45AFE3DD-5315-4D13-A07D-01262F6A0A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45AFE3DD-5315-4D13-A07D-01262F6A0A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45AFE3DD-5315-4D13-A07D-01262F6A0A08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

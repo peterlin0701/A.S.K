@@ -8,7 +8,7 @@ namespace ASK.AspNetCoreRoute.Controllers.API
     [ApiController]
     public class ProductController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("Detail")]
         public IActionResult Get()
         {
             return new JsonResult(new { message = "Congratulations on completing an assignment" });
